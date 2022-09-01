@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/Rubik-Regular.ttf");
+}
+@font-face {
+  font-family: "Oxanium";
+  src: url("../assets/Oxanium-Regular.ttf");
+}
+:root {
+  --firstDiv: #0d0d2b;
+  --hoverColor: #5c59a5;
+  --callToAction: #3671e9;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.firstDiv {
+  background-color: var(--firstDiv);
+  width: 100vw;
+  color: white;
+  overflow: hidden;
+}
+.firstDiv .topper {
+  padding: 20px 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-between;
+}
+.firstDiv .topper img {
+  margin: 0 35px;
+}
+.firstDiv .topper .topper_right {
+  display: inherit;
+  align-items: center;
+  height: 100%;
+  margin: 0 30px;
+}
+.firstDiv .topper .topper_right ul {
+  list-style-type: none;
+}
+.firstDiv .topper .topper_right ul li {
+  float: left;
+  padding: 15px;
+  font-size: 16px;
+  font-family: "Oxanium";
+  cursor: pointer;
+  transition: 0.3s;
+}
+.firstDiv .topper .topper_right ul li::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: var(--hoverColor);
+  transition: 0.5s;
+}
+.firstDiv .topper .topper_right ul li:hover::after {
+  width: 100%;
+}
+.firstDiv .topper .topper_right .loginRegister {
+  margin: 0 20px;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.firstDiv .topper .topper_right .loginRegister p {
+  padding: 10px 15px;
+}
+.firstDiv .topper .topper_right .loginRegister .buttons {
+  font-size: 16px;
+  font-family: "Oxanium";
+  text-align: center;
+  cursor: pointer;
+}
+.firstDiv .topper .topper_right .loginRegister .register {
+  width: 5rem;
+  border-radius: 50px;
+  background-color: var(--callToAction);
+}/*# sourceMappingURL=style.css.map */
