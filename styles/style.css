@@ -10,6 +10,7 @@
   --firstDiv: #0d0d2b;
   --hoverColor: #5c59a5;
   --callToAction: #3671e9;
+  --NeutralGrey: #e0e0e0;
 }
 
 * {
@@ -17,9 +18,16 @@
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .firstDiv {
   background-color: var(--firstDiv);
   width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   color: white;
   overflow: hidden;
 }
@@ -63,14 +71,15 @@
   width: 100%;
 }
 .firstDiv .topper .topper_right .loginRegister {
-  margin: 0 20px;
+  margin: 0 25px;
   display: inherit;
   align-items: center;
   justify-content: center;
   height: 100%;
 }
 .firstDiv .topper .topper_right .loginRegister p {
-  padding: 10px 15px;
+  padding: 7px 7px;
+  margin: 0 5px;
 }
 .firstDiv .topper .topper_right .loginRegister .buttons {
   font-size: 16px;
@@ -82,4 +91,81 @@
   width: 5rem;
   border-radius: 50px;
   background-color: var(--callToAction);
+}
+.firstDiv .landingMessage {
+  display: flex;
+  padding: 10px;
+}
+.firstDiv .landingMessage .contents {
+  height: 30rem;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+}
+.firstDiv .landingMessage .landingMessageLeft {
+  flex-direction: column;
+  width: 40vw;
+}
+.firstDiv .landingMessage .landingMessageLeft .save {
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+.firstDiv .landingMessage .landingMessageLeft .save .saveMsg {
+  background-color: white;
+  border-radius: 10px;
+  color: var(--firstDiv);
+  font-family: "Oxanium";
+  font-size: 13px;
+  padding: 3px;
+  text-align: center;
+}
+.firstDiv .landingMessage .landingMessageLeft .save .saveMsg2 {
+  background-color: transparent;
+  font-family: "Oxanium";
+  margin-left: 20px;
+  font-size: 13px;
+}
+.firstDiv .landingMessage .landingMessageLeft h1 {
+  font-family: "Oxanium";
+  font-size: 2.8rem;
+}
+.firstDiv .landingMessage .landingMessageLeft .underHeader {
+  font-size: 12px;
+  font-family: "Oxanium";
+  color: var(--NeutralGrey);
+}
+.firstDiv .landingMessage .landingMessageLeft .tryBtn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 30px;
+  margin: 19px 0;
+  font-family: "Oxanium";
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+  border-radius: 50px;
+  background-color: var(--callToAction);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.firstDiv .landingMessage .landingMessageLeft .tryBtn div {
+  text-align: center;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+}
+.firstDiv .landingMessage .landingMessageRight {
+  width: 60vw;
+  background-image: url("../images/landing-right.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }/*# sourceMappingURL=style.css.map */

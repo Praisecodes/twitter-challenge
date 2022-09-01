@@ -12,6 +12,7 @@
     --firstDiv: #0d0d2b;
     --hoverColor: #5c59a5;
     --callToAction: #3671e9;
+    --NeutralGrey: #e0e0e0;
 }
 
 *{
@@ -20,12 +21,14 @@
 }
 
 body{
-    //overflow: hidden;
+    //overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .firstDiv{
     background-color: var(--firstDiv);
     width: 100vw;
+    height: fit-content;
     color: white;
     overflow: hidden;
     .topper{
@@ -69,13 +72,14 @@ body{
                 }
             }
             .loginRegister{
-                margin: 0 20px;
+                margin: 0 25px;
                 display: inherit;
                 align-items: center;
                 justify-content: center;
                 height: 100%;
                 p{
-                    padding: 10px 15px;
+                    padding: 7px 7px;
+                    margin: 0 5px;
                 }
                 .buttons{
                     font-size: 16px;
@@ -89,6 +93,80 @@ body{
                     background-color: var(--callToAction);
                 }
             }
+        }
+    }
+    .landingMessage{
+        display: flex;
+        padding: 10px;
+        .contents{
+            height: 30rem;
+            padding: 0 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .landingMessageLeft{
+            flex-direction: column;
+            width: 40vw;
+            .save{
+                background-color: #ffffff1a;
+                width: fit-content;
+                padding: 5px;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                .saveMsg{
+                    background-color: white;
+                    border-radius: 10px;
+                    color: var(--firstDiv);
+                    font-family: "Oxanium";
+                    font-size: 13px;
+                    padding: 3px;
+                    text-align: center;
+                }
+                .saveMsg2{
+                    background-color: transparent;
+                    font-family: "Oxanium";
+                    margin-left: 20px;
+                    font-size: 13px;
+                }
+            }
+            h1{
+                font-family: "Oxanium";
+                font-size: 2.8rem;
+            }
+            .underHeader{
+                font-size: 12px;
+                font-family: "Oxanium";
+                color: var(--NeutralGrey);
+            }
+            .tryBtn{
+                width: fit-content;
+                padding: 5px 30px;
+                margin: 19px 0;
+                font-family: "Oxanium";
+                font-size: 18px;
+                border: 0;
+                outline: 0;
+                border-radius: 50px;
+                background-color: var(--callToAction);
+                color: white;
+                display: flex;
+                align-items: center;
+                div{
+                    // background-color: white;
+                    text-align: center;
+                    color: white;
+                    padding: 8px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .landingMessageRight{
+            width: 60vw;
+            background-image: url("../images/landing-right.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
         }
     }
 }
