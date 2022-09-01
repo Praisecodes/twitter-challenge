@@ -107,22 +107,23 @@ body {
   width: 40vw;
 }
 .firstDiv .landingMessage .landingMessageLeft .save {
-  background-color: rgba(255, 255, 255, 0.1019607843);
+  background-color: #4b5563;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 5px;
+  padding: 4px 8px 4px 4px;
   border-radius: 50px;
   display: flex;
   align-items: center;
+  margin: 10px 0;
 }
 .firstDiv .landingMessage .landingMessageLeft .save .saveMsg {
   background-color: white;
-  border-radius: 10px;
-  color: var(--firstDiv);
+  border-radius: 15px;
+  color: var(--hoverColor);
   font-family: "Oxanium";
-  font-size: 13px;
-  padding: 3px;
+  font-size: 12px;
+  padding: 5px 10px;
   text-align: center;
 }
 .firstDiv .landingMessage .landingMessageLeft .save .saveMsg2 {
@@ -168,4 +169,40 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+.firstDiv .bragmuch {
+  display: flex;
+  background-color: transparent;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.firstDiv .bragmuch .bragcount {
+  width: 23rem;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+.firstDiv .bragmuch .bragcount .image {
+  padding: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  background-color: #4b5563;
+}
+.firstDiv .bragmuch .bragcount .write {
+  padding: 20px;
+  font-family: "Oxanium";
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.firstDiv .bragmuch .bragcount .write h2, .firstDiv .bragmuch .bragcount .write p {
+  padding: 0;
+  margin: 0;
+}
+.firstDiv .bragmuch .bragcount .write p {
+  color: #4b5563;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

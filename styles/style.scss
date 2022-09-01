@@ -108,19 +108,20 @@ body{
             flex-direction: column;
             width: 40vw;
             .save{
-                background-color: #ffffff1a;
+                background-color: #4b5563;
                 width: fit-content;
-                padding: 5px;
+                padding: 4px 8px 4px 4px;
                 border-radius: 50px;
                 display: flex;
                 align-items: center;
+                margin: 10px 0;
                 .saveMsg{
                     background-color: white;
-                    border-radius: 10px;
-                    color: var(--firstDiv);
+                    border-radius: 15px;
+                    color: var(--hoverColor);
                     font-family: "Oxanium";
-                    font-size: 13px;
-                    padding: 3px;
+                    font-size: 12px;
+                    padding: 5px 10px;
                     text-align: center;
                 }
                 .saveMsg2{
@@ -167,6 +168,42 @@ body{
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
+        }
+    }
+    .bragmuch{
+        display: flex;
+        background-color: transparent;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .bragcount{
+            width: 23rem;
+            //border: 1px solid white;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            .image{
+                padding: 10px;
+                width: fit-content;
+                border-radius: 50%;
+                background-color: #4b5563;
+            }
+            .write{
+                padding: 20px;
+                font-family: "Oxanium";
+                height: 100%;
+                display: flex;
+                //align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h2,p{
+                    padding: 0;
+                    margin: 0;
+                }
+                p{
+                    color: #4b5563;
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
