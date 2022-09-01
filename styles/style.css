@@ -177,10 +177,13 @@ body {
   justify-content: space-evenly;
 }
 .firstDiv .bragmuch .bragcount {
-  width: 23rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 5px;
   display: flex;
   align-items: center;
+  margin: 0 30px;
 }
 .firstDiv .bragmuch .bragcount .image {
   padding: 10px;
@@ -205,4 +208,47 @@ body {
 .firstDiv .bragmuch .bragcount .write p {
   color: #4b5563;
   font-size: 14px;
+}
+.firstDiv .whyus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstDiv .whyus .imageLeft {
+  width: 45vw;
+  height: 30rem;
+  background-image: url("../images/why image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.firstDiv .whyus .whyusRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Oxanium";
+  font-size: 1.6rem;
+  padding: 10px;
+}
+.firstDiv .whyus .whyusRight h1 {
+  font-weight: 100;
+}
+.firstDiv .whyus .whyusRight p {
+  font-size: 17px;
+  width: 36rem;
+  padding: 5px;
+  color: #4b5563;
+}
+.firstDiv .whyus .whyusRight .learnMore {
+  background-color: var(--callToAction);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 50px;
+  font-family: "Oxanium";
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

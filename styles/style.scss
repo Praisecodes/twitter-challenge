@@ -176,11 +176,12 @@ body{
         flex-wrap: wrap;
         justify-content: space-evenly;
         .bragcount{
-            width: 23rem;
+            width: fit-content;
             //border: 1px solid white;
             padding: 5px;
             display: flex;
             align-items: center;
+            margin: 0 30px;
             .image{
                 padding: 10px;
                 width: fit-content;
@@ -203,6 +204,48 @@ body{
                     color: #4b5563;
                     font-size: 14px;
                 }
+            }
+        }
+    }
+
+    .whyus{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .imageLeft{
+            width: 45vw;
+            height: 30rem;
+            background-image: url("../images/why image.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .whyusRight{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: "Oxanium";
+            font-size: 1.6rem;
+            padding: 10px;
+            h1{
+                font-weight: 100;
+            }
+            p{
+                font-size: 17px;
+                width: 36rem;
+                padding: 5px;
+                color: #4b5563;
+            }
+            .learnMore{
+                background-color: var(--callToAction);
+                width: fit-content;
+                padding: 8px 15px;
+                color: white;
+                border-radius: 50px;
+                font-family: "Oxanium";
+                font-size: 16px;
+                border: 0;
+                cursor: pointer;
             }
         }
     }
