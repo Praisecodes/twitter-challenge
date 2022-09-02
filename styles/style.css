@@ -174,7 +174,7 @@ body {
   display: flex;
   background-color: transparent;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .firstDiv .bragmuch .bragcount {
   width: -webkit-fit-content;
@@ -183,7 +183,6 @@ body {
   padding: 5px;
   display: flex;
   align-items: center;
-  margin: 0 30px;
 }
 .firstDiv .bragmuch .bragcount .image {
   padding: 10px;
@@ -260,6 +259,7 @@ body {
   align-items: center;
   font-family: "Oxanium";
   padding: 20px;
+  margin-bottom: 12rem;
 }
 .firstDiv .howMuch h3 {
   font-size: 1.2rem;
@@ -267,4 +267,76 @@ body {
 .firstDiv .howMuch p {
   color: #4b5563;
   font-size: 14px;
+}
+
+.secondDiv {
+  background-color: transparent;
+  padding: 10px;
+  width: 100vw;
+}
+.secondDiv .estimatedRevenue {
+  width: 52rem;
+  box-shadow: 0 25px 15px 5px rgba(0, 0, 0, 0.1);
+  margin: -12rem auto 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  padding: 3rem;
+}
+.secondDiv .estimatedRevenue .calculation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.secondDiv .estimatedRevenue .calculation input {
+  outline: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: "Oxanium";
+  font-size: 17px;
+  padding: 10px;
+  width: 20rem;
+  margin: 1rem;
+}
+.secondDiv .estimatedRevenue .calculation input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.6666666667);
+}
+.secondDiv .estimatedRevenue .calculation input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6666666667);
+}
+.secondDiv .estimatedRevenue .calculation input::placeholder {
+  color: rgba(0, 0, 0, 0.6666666667);
+}
+.secondDiv .estimatedRevenue .calculation button {
+  border: 0;
+  background-color: var(--callToAction);
+  color: white;
+  font-family: "Oxanium";
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin: 0 2rem;
+}
+.secondDiv .estimatedRevenue .tag {
+  color: var(--callToAction);
+  font-size: 18px;
+  font-family: "Oxanium";
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.secondDiv .estimatedRevenue h1 {
+  font-family: "Oxanium";
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.secondDiv .estimatedRevenue h1 span {
+  color: var(--callToAction);
+}
+.secondDiv .estimatedRevenue .lastText {
+  color: #4b5563;
+  font-size: 15px;
+  font-family: "Oxanium";
+  padding: 10px 0;
+  margin: 5px 0;
 }/*# sourceMappingURL=style.css.map */
